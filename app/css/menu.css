@@ -1,0 +1,102 @@
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 0;
+  z-index: 3; }
+  .menu__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .menu__left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  .menu__home {
+    position: relative;
+    top: 3px;
+    flex: 120px 0 0;
+    height: 75px;
+    margin-right: 72px;
+    background-image: url("/img/logo.svg");
+    background-size: cover; }
+  .menu__links {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 18px; }
+  .menu__link {
+    margin-right: 58px;
+    font: 12px/17px 'Museo Sans Cyrl 300';
+    letter-spacing: 0.04em;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap; }
+  .menu__link--active {
+    color: #f8a815; }
+  .menu__contact {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 28px;
+    height: 45px;
+    background-color: #f8a815;
+    font: 12px/17px 'Museo Sans Cyrl 300';
+    letter-spacing: 0.04em;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none; }
+  .menu__mob-link {
+    display: none; }
+
+@media screen and (max-width: 1169px) {
+  .menu .container {
+    width: 100%; }
+  .menu__home {
+    margin-right: 30px; }
+  .menu__link {
+    margin-right: 33px; } }
+
+@media screen and (max-width: 960px) {
+  .menu__links, .menu__contact {
+    display: none; }
+  .menu__mob-link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 34px;
+    width: 36px;
+    height: 28px;
+    cursor: pointer; }
+    .menu__mob-link span, .menu__mob-link::before, .menu__mob-link::after {
+      display: block;
+      width: 36px;
+      height: 2px;
+      background-color: #fff;
+      transition: all 0.2s ease; }
+    .menu__mob-link::before, .menu__mob-link::after {
+      content: '';
+      position: absolute;
+      left: 0; }
+    .menu__mob-link::before {
+      top: 0; }
+    .menu__mob-link::after {
+      bottom: 0; } }
+
+@media screen and (max-width: 480px) {
+  .menu .container {
+    padding: 0 20px; }
+  .menu__home {
+    top: 3px;
+    flex: 56px 0 0;
+    height: 35px; }
+  .menu__mob-link {
+    margin-right: 5px;
+    width: 25px;
+    height: 13px; }
+    .menu__mob-link span, .menu__mob-link::before, .menu__mob-link::after {
+      width: 25px;
+      height: 1px; }
+    .menu__mob-link::before, .menu__mob-link::after {
+      left: 0; } }

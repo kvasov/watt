@@ -1,0 +1,28 @@
+.paginator {
+  position: fixed;
+  left: calc((100vw - 1140px) / 2);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  a {
+    display: block;
+    margin-bottom: 30px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+
+    &.current {
+      width: 10px;
+      height: 10px;
+      background-color: #f8a815;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .paginator {
+    display: none;
+  }
+}
